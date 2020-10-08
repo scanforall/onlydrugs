@@ -1,0 +1,42 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+
+  @include phones {
+    margin-top: 10px;
+    font-size: 16px;
+    justify-content: flex-start;
+  }
+
+  &__btn {
+    display: none;
+
+    
+  }
+
+  &__list {
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
+  &__item {
+   
+    margin-right: 24px;
+
+    &:hover {
+      cursor: pointer;
+      text-shadow: 0 0 14px blue;
+      
+    }
+
+    @include phones {
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.hamburger {
+  display: none;
+  justify-content: center;
+
+  &__list {
+    flex-direction: column;
+   
+    @include phones {
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+    margin-bottom: 0;
+    }
+  }
+}

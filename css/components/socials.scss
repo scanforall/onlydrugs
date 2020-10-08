@@ -1,0 +1,24 @@
+.socials {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+
+
+  &__list {
+    padding-top: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    max-width: 10%;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+}

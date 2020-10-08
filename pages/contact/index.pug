@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="../../css/main.css")
+    link(rel='icon' type='image/png' href='../../img/favicon.png' sizes='120x120')
+    title OnlyDrugs
+  body
+    .section(data-vide-bg="../../video/videobg")
+      .header
+        .container.header__container
+          a.logo(href="https://onlydrugs.net/")
+            img.logo__pic(src="../../img/OnlyDrugs_logo.png", alt="logo onlydrugs")
+          nav.menu
+            a.menu__btn MENU
+            ul.menu__list
+              li.menu__item
+                a.menu__link(href="../social")
+                  .menu__text SOCIAL
+              li.menu__item
+                a.menu__link(href="../listen")
+                  .menu__text LISTEN
+              li.menu__item
+                a.menu__link(href="../video")
+                  .menu__text VIDEO
+              li.menu__item
+                a.menu__link(href="../contact")
+                  .menu__text CONTACT
+      main.main
+        .contact
+          a.contact__mail(href="mailto:onlydrugsmusic@gmail.com") onlydrugsmusic@gmail.com
+
+    script(src='https://code.jquery.com/jquery-1.12.4.js')
+    script(src='../../js/jquery.vide.min.js')
+    

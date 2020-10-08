@@ -1,0 +1,49 @@
+.video {
+
+  margin-top: 2vh;
+
+  &__screen {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20vw;
+
+    @include tablets {
+      margin-left: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    max-width: 600px;
+   
+  }
+
+  &__frame {
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+    justify-content: center;
+
+  }
+
+  &__frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
+}

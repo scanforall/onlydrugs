@@ -1,0 +1,21 @@
+.contact {
+  margin-top: 40vh;
+
+  &__mail {
+    font-size: 30px;
+    
+    &:hover {
+      text-shadow: 0 0 14px blue;
+      
+    }
+
+    @include tablets {
+      font-size: 18px;
+    }
+    @include phones {
+      font-size: 14px;
+    }
+  }
+
+
+}
